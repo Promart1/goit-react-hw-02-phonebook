@@ -8,6 +8,7 @@ export const Filter = ({ value, onChangeFilter }) => (
     <input
       className={css.input}
       type="text"
+      placeholder="Name"
       value={value}
       onChange={e => onChangeFilter(e.target.value)}
     />

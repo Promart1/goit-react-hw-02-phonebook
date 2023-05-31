@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import css from '../Form/Form.module.css';
 
 export class Form extends Component {
+  static propTypes = {
+    onAddContact: PropTypes.func.isRequired,
+  };
+
   state = {
     name: '',
     number: '',
